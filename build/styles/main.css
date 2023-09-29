@@ -11,10 +11,17 @@ body {
   background-color: #30336b;
   color: #dfe4ea;
 }
+li {
+  list-style: none;
+}
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   .container {
@@ -64,4 +71,24 @@ header .profile-image {
 }
 .social-links li img:hover {
   transform: scale(1.25);
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #3742fa;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #dfe4ea;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #3742fa;
+  transition: all ease 0.5s;
+}
+.projects-list-item a:hover {
+  color: #3742fa;
+  background-color: transparent;
 }
